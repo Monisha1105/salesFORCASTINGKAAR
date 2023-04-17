@@ -1,0 +1,30 @@
+<div class="login-card">
+    <h3>Login</h3>
+    <form #loginForm="ngForm">
+        <div class="form-group mt-2">
+            <label>Email</label>
+            <input type="email" class="form-control" [(ngModel)]="login.email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <div *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)">
+                <div *ngIf="loginForm.controls['email'].errors.required">Email is required</div>
+                <div *ngIf="loginForm.controls['email'].errors.pattern">Invalid email format</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" [(ngModel)]="login.password" name="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+
+            <div *ngIf="loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)">
+                <div *ngIf="loginForm.controls['password'].errors.required">Password is required</div>
+                <div *ngIf="loginForm.controls['password'].errors.pattern">Password must contain at least 8 characters including at least one uppcaseletter and one number</div>
+            </div>
+        </div>
+        
+        <div class="text-danger" *ngIf="loginError">
+            Invalid email or password
+        </div>
+        <div class="mt-2">
+            <button class="btn btn-primary" [disabled]="loginForm.invalid" (click)="userLogin()">Login</button>
+        </div>
+    </form>
+ 
+</div>

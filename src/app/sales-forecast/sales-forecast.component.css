@@ -1,0 +1,138 @@
+.container {
+  max-width: 2000px;
+  height: 1000px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #012932, #076a71);
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #03212c;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+  animation: rainbow 1s infinite;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h5{
+  color: #dfdbdb;
+}
+
+@keyframes rainbow {
+  0% {
+    color: #f5fafb;
+  }
+  50% {
+    color: #f4f8f9;
+  }
+  100% {
+    color: #fcfaff;
+  }
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
+  animation: fade-in 1s ease-out;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #02313f;
+  font-weight: bold;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+}
+
+.form-control {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: inset 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+  margin-top: 20px;
+  background-color: #03404d;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
+  animation: pulse 1s infinite;
+}
+
+
+
+.progress {
+  margin-top: 10px;
+  color: #e6dbdb;
+  
+
+}
+
+.progress-bar {
+  background-color: #e9eef3;
+  color: #fffdfd;
+}
+
+#image-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+body {
+  background-color: #134b4d;
+  background-image: radial-gradient(white 5%, transparent 5%), radial-gradient(white 5%, transparent 5%);
+  background-position: 0 0, 25px 25px;
+  background-size: 50px 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #053032, #011518);
+}
+
+.container {
+  background-color: rgb(3, 36, 43);
+  box-shadow: 5px 5px 0px rgba(79, 5, 5, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  margin-top: 20px;
+  background-color: #023c49;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+  box-shadow: 5px 5px 0px rgba(0,0,0,0.1);
+}
+
+.btn-primary:hover {
+  background-color: #025063;
+  cursor: pointer;
+}
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px; 
+}
+
+.file-uploaded {
+  color: #ffffff;
+}
+

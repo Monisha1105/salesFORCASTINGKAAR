@@ -1,0 +1,35 @@
+.proceed-to-login-card{
+    cursor: pointer;
+    border-radius : 5px;
+    border: 2px dotted rgb(3, 40, 59) !important;
+    width: 50%;
+    padding : 30px;
+    margin: 0 auto;
+    background: white !important;
+    margin-top: 100px;
+    color: rgb(2, 38, 56)
+}
+.proceed-to-login-card:hover{
+   color: white;
+    background: rgb(2, 42, 62) !important;
+}
+.proceed-to-login-card {
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px dotted rgb(3, 40, 59) !important;
+    width: 50%;
+    padding: 30px;
+    margin: 0 auto;
+    background: white !important;
+    margin-top: 100px;
+    color: rgb(2, 38, 56);
+    transition: all 0.5s ease;
+  }
+  
+  .proceed-to-login-card:hover {
+    color: white;
+    background: rgb(2, 42, 62) !important;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.1);
+  }
+  

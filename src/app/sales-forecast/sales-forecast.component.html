@@ -1,0 +1,61 @@
+<div class="container">
+  <h2 class="text-center">FILL THE REQUIRED DETAILS</h2>
+  <form>
+    <div class="form-group">
+      <label for="fileUpload">Upload Sales Data File:</label>
+      <input type="file" class="form-control-file" id="fileUpload" (change)="onFileSelected($event)">
+    </div>
+    <div class="form-group">
+      <label for="timePeriod">Select Time Period:</label>
+      <select class="form-control" [(ngModel)]="timePeriod" (change)="onChange($event)">
+        <option value="3">3 months</option>
+        <option value="6">6 months</option>
+        <option value="9">9 months</option>
+        <option value="12">1 year</option>
+        <option value="24">2 year</option>
+        <option value="48">4 year</option>
+
+      </select>
+    </div>
+   
+    <button type="button" class="btn btn-primary animate__animated animate__fadeInUp" (click)="onUpload()">Submit</button>
+   
+  </form>
+  <br>
+  <div *ngIf="progress">
+    <h5 class="text-center">Upload Progress: {{progress}}%</h5>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped bg-info" role="progressbar" [style.width.%]="progress">
+      </div>
+    </div>
+    <div class="text-center mt-2 file-uploaded" *ngIf="progress === 100">
+      File uploaded
+    </div>
+    
+    <img src="assets/my_plot.png" >
+  </div>
+  
+
+  
+
+<!--
+<script>
+  onUpload() {
+    const fd = new FormData();
+    fd.append('file', this.selectedFile, this.selectedFile.name);
+    fd.append('timePeriod',this.timePeriod);
+    setTimeout(() => {
+      // Create new image element and set its source to my_plot.png
+      const img = document.createElement('img');
+      img.src = 'my_plot.png';
+  
+      // Append the new image element to the container
+      const container = document.getElementById('image-container');
+      container.appendChild(img);
+    }, 2000); 
+  }
+</script>-->
+
+
+
+
